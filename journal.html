@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Journal | Octo-mood Tracker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="images/octomood.png" alt="Octo Mood Logo">
+                <span>Octo-Mood Tracker</span>
+            </a>
+            <input type="checkbox"  id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menubtn">
+            <span></span>
+            <span></span>             
+            <span></span>
+            </label>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Sign Up</a>
+                <a href="aboutus.html">About Us</a>
+                <div class="dropdown">
+                    <a href="#">ToolBox</a>
+                    <div class="dropdown-menu">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="journal.html">Journal</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="journalPage">
+            <section class="journalContainer">
+                <h1 id="journalTitle">Daily Journal</h1>
+                <p id="journalText">
+                Write more about your mood, thoughts, and what happened today.</p>
+                <label for="journalDate">Choose Date</label>
+                <input type="date" id="journalDate">
+                <label for="journalEntry">Journal Entry</label>
+                <textarea id="journalEntry" placeholder="Write your thoughts here..."></textarea>
+                <button id="saveJournalButton">Save Journal</button>
+                <p id="journalSavedMessage"></p>
+            </section>
+        </main>
+
+        <script src="journal.js"></script>
+
+        <footer>
+            <div class="footerhead1">
+                <h2>Account Options</h2>
+                <a href="register.html">Sign Up</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div class="footerhead2">
+                <h2>ToolBox</h2>
+                <a href="calendar.html">Calendar</a>
+                <a href="journal.html">Journal</a>
+            </div>
+            <div class="footerhead3">
+                <h2>Get in touch with us!</h2>
+                <input type="email" placeholder="Please enter your email here." id="footeremail"> 
+                <input type="submit" value="Submit" id="footemailbtn"> 
+            </div>
+            <hr>
+            <p>© 2026 Octo-Mood</p>
+        </footer>        
+    </body>
+
+</html>
